@@ -7,10 +7,7 @@ export default function App() {
 
       <footer>
         This project was created by
-        <a
-          href="https://www.shecodes.io/graduates/120875-millicent-kapinga"
-          target="_blank"
-        >
+        <a href="https://www.shecodes.io/graduates/120875-millicent-kapinga">
           Millicent Kapinga
         </a>{" "}
         and is{" "}
