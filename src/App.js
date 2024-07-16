@@ -14,7 +14,7 @@ export default function App() {
           Millicent Kapinga
         </a>{" "}
         and is{" "}
-        <a href="https://github.com/Millykapy/weather.js " target="_blank">
+        <a href="https://github.com/Millykapy/weather.js ">
           Open-sourced on Github
         </a>
       </footer>
