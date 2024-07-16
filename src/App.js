@@ -1,3 +1,5 @@
+import React from "react";
+import Weather from "./Weather";
 import "./App.css";
 
 export default function App() {
@@ -5,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <h1> Spooky Weather </h1>
-
+        <Weather />
         <footer>
           This project was created by{" "}
           <a href="https://www.shecodes.io/graduates/120875-millicent-kapinga">
