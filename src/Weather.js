@@ -4,10 +4,18 @@ import axios from "axios";
 
 export default function Weather() {
   const [ready, setReady] = useState(false);
-  const [temperature, setTemperature] = useState(null);
+  const [weatherData, setWeatherData] = useState({});
 
   function handleResponse(response) {
-    setTemperature(response.data.main.temp);
+    setWeatherData({
+      temperature: response.data.current.temperature,
+      humidity: response.data.current.humidity,
+      description: response.data.Weather[0].description,
+      iconUrl:
+        "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png",
+      wind: response.data.wind.speed,
+      city: response.data.name,
+    });
     setReady(true);
   }
   if (ready) {
@@ -32,29 +40,30 @@ export default function Weather() {
             </div>
           </div>
         </form>
-        <h2>Johannesburg</h2>
+        <h2> {weatherData.city} </h2>
         <ul>
           <li>Monday 17:05</li>
-          <li>Clear Sky</li>
+          <li className="text-capitalize"> {weatherData.description} </li>
         </ul>
         <div className="row">
           <div className="col-6">
             <div className="clearfix">
               <img
-                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-                alt="clear-sky-day"
+                src={weatherData.iconUrl}
+                alt={weatherData.description}
                 className="float-left"
               />
 
-              <span className="temperature">{temperature} </span>
+              <span className="temperature">
+                {Math.round(weatherData.temperature)}
+              </span>
               <span className="unit">℃</span>
             </div>
           </div>
           <div className="col-6">
             <ul>
-              <li>Precipitation: 10%</li>
-              <li>Humidity: 80%</li>
-              <li>Wind: 15km/h</li>
+              <li>Humidity: {weatherData.humidity} </li>
+              <li>Wind: {weatherData.wind} </li>
             </ul>
           </div>
         </div>
@@ -62,7 +71,6 @@ export default function Weather() {
     );
   } else {
     const apiKey = "4o0269f4b7t3d5f7f0cfc4a0af394b27";
-    let city = "Paris";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
