@@ -5,6 +5,7 @@ import axios from "axios";
 export default function Weather() {
   const [ready, setReady] = useState(false);
   const [temperature, setTemperature] = useState(null);
+
   function handleResponse(response) {
     setTemperature(response.data.main.temp);
     setReady(true);
@@ -60,7 +61,7 @@ export default function Weather() {
       </div>
     );
   } else {
-    const apiKey = "4o0269f4b7t3d5f7f0cfc4a0af394b27 ";
+    const apiKey = "4o0269f4b7t3d5f7f0cfc4a0af394b27";
     let city = "Paris";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
