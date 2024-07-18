@@ -11,3 +11,7 @@
   font-size: 11px;
   margin: 10px 0;
 }
+.App h1 {
+  font-size: 30px;
+  font-family: "Nosifer", sans-serif;
+}
