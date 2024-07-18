@@ -2,23 +2,29 @@ import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
 
-export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+export default function Weather(props) {
+  const [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     setWeatherData({
-      temperature: response.data.current.temperature,
-      humidity: response.data.current.humidity,
-      description: response.data.Weather[0].description,
+      ready: true,
+      temperature: response.data.temperature.current,
+      humidity: response.data.temperature.humidity,
+      date: "Thursday 12:24",
+      description: response.data.condition.description,
       iconUrl:
         "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png",
       wind: response.data.wind.speed,
-      city: response.data.name,
+      city: response.data.city,
     });
-    setReady(true);
   }
-  if (ready) {
+
+  function handleInputChange(event) {
+    setCity(event.target.value);
+  }
+
+  if (weatherData.ready) {
     return (
       <div className="Weather">
         <form>
@@ -29,6 +35,7 @@ export default function Weather() {
                 placeholder="Enter a city name..."
                 className="form-control"
                 autoFocus="on"
+                onChange={handleInputChange}
               />
             </div>
             <div className="col-3">
@@ -42,7 +49,7 @@ export default function Weather() {
         </form>
         <h2> {weatherData.city} </h2>
         <ul>
-          <li>Monday 17:05</li>
+          <li> {weatherData.date}</li>
           <li className="text-capitalize"> {weatherData.description} </li>
         </ul>
         <div className="row">
