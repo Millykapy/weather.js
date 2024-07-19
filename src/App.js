@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <h1> Spooky Weather</h1>
-        <Weather defaultCity="Cape Town" />
+        <Weather defaultCity="Johannesburg" />
         <footer>
           This project was created by{" "}
           <a href="https://www.shecodes.io/graduates/120875-millicent-kapinga">
