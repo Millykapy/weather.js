@@ -1,6 +1,14 @@
 .App {
-  max-width: 600px;
-  margin: 30px auto;
+  max-width: 650px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 40px;
+  background-image: url(" https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/513/original/wp5179254-spooky-house-cartoon-wallpapers.jpg?1720610505");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  backdrop-filter: blur(2px);
+  color: rgb(189, 143, 250);
 }
 
 .App footer {
