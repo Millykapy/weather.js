@@ -1,7 +1,7 @@
 .Weather {
   font-family: "Nosifer", sans-serif;
   border: 1px solid #dadde1;
-  color: rgb(135, 135, 135);
+  color: red;
   padding: 16px;
   border-radius: 10px;
 }
