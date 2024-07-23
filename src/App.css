@@ -3,31 +3,42 @@
   margin: 10px auto;
   text-align: center;
   padding: 40px;
-  background-image: url(" https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/513/original/wp5179254-spooky-house-cartoon-wallpapers.jpg?1720610505");
-  background-repeat: no-repeat;
-  background-size: cover;
+
   margin: 0 auto;
   backdrop-filter: blur(3px);
   color: #fa6701;
-  box-shadow: 5px 5px 5px black;
+
   border-radius: 5px;
+}
+.App a {
+  color: #fa6701;
+  font-style: italic;
+  font-family: "Nosifer", sans-serif;
 }
 
 .App footer {
   font-size: 11px;
   margin: 10px 0;
   font-family: "Nosifer", sans-serif;
+  color: green;
+  font-style: italic;
 }
 
-.App h1 {
+.App h3 {
   font-family: "Nosifer", sans-serif;
   text-align: center;
-
   font-size: 4.5vw;
   color: #111111;
   -moz-animation: flicker 4s 0s infinite;
   -webkit-animation: flicker 4s 0s infinite;
   animation: flicker 4s 0s infinite;
+}
+
+.App p {
+  font-family: "Nosifer", sans-serif;
+  text-align: center;
+  font-size: 4.5vw;
+  color: #111111;
 }
 
 [class*="spider"] {
@@ -220,7 +231,6 @@
   right: -10px;
   top: -10px;
   z-index: -1;
-  opacity: 0.2;
 }
 .web-left {
   position: absolute;
@@ -231,7 +241,6 @@
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   z-index: -1;
-  opacity: 0.2;
 }
 @-moz-keyframes flicker {
   0%,
