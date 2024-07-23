@@ -4,15 +4,17 @@
   color: rgb(85, 149, 27);
   padding: 16px;
   border-radius: 10px;
+  text-shadow: 1px 1px 1px rgb(20, 20, 20);
 }
 
 .Weather h2 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 100;
   line-height: 29px;
   margin: 20px 0 0 0;
   color: rgb(255, 67, 5);
   padding: 15px;
+  box-shadow: 5px;
 }
 
 .Weather ul {
