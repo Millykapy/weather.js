@@ -3,11 +3,9 @@
   margin: 10px auto;
   text-align: center;
   padding: 40px;
-
   margin: 0 auto;
   backdrop-filter: blur(3px);
   color: #fa6701;
-
   border-radius: 5px;
 }
 .App a {
