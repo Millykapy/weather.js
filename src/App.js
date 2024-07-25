@@ -35,7 +35,6 @@ export default function App() {
             hosted on Netlify
           </a>
         </footer>
-        <p>Happy Halloween!</p>
       </div>
     </div>
   );

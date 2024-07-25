@@ -1,10 +1,7 @@
 .App {
-  max-width: 650px;
-  margin: 10px auto;
-  text-align: center;
-  padding: 40px;
+  max-width: 580px;
   margin: 0 auto;
-  backdrop-filter: blur(3px);
+  text-align: center;
   color: #fa6701;
   border-radius: 5px;
 }
@@ -16,27 +13,27 @@
 
 .App footer {
   font-size: 11px;
-  margin: 10px 0;
+  margin: 0 auto;
   font-family: "Nosifer", sans-serif;
   color: green;
   font-style: italic;
+  padding: 5px;
 }
 
 .App h3 {
   font-family: "Nosifer", sans-serif;
   text-align: center;
-  font-size: 4.5vw;
+  font-size: 4vw;
   color: #111111;
   -moz-animation: flicker 4s 0s infinite;
   -webkit-animation: flicker 4s 0s infinite;
   animation: flicker 4s 0s infinite;
 }
 
-.App p {
-  font-family: "Nosifer", sans-serif;
-  text-align: center;
-  font-size: 4.5vw;
-  color: #111111;
+body {
+  background-color: #e5d3fd;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/135/360/original/annie-spratt-X4l3CjcDvic-unsplash.jpg?172184938);
+  background-size: 100%;
 }
 
 [class*="spider"] {
@@ -77,9 +74,9 @@
   top: 6px;
   height: 5px;
   width: 5px;
-  -moz-border-radius: 30%;
-  -webkit-border-radius: 30%;
-  border-radius: 30%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   background: black;
 }
 [class*="spider"] .eye.left {
@@ -169,7 +166,7 @@
   animation: legs-wriggle-right 1s 0.4s infinite;
 }
 [class*="spider"] .leg:nth-of-type(7) {
-  top: 15px;
+  top: 22px;
   right: -12px;
   -moz-animation: legs-wriggle-right 1s 0.7s infinite;
   -webkit-animation: legs-wriggle-right 1s 0.7s infinite;
@@ -202,21 +199,21 @@
 }
 .spider_3 {
   right: 35%;
-  margin-top: 40px;
+  margin-top: 160px;
   -moz-animation: spider-move-3 5s infinite;
   -webkit-animation: spider-move-3 5s infinite;
   animation: spider-move-3 5s infinite;
 }
 .spider_4 {
   right: 20%;
-  margin-top: 40px;
+  margin-top: 50px;
   -moz-animation: spider-move-4 5s infinite;
   -webkit-animation: spider-move-4 5s infinite;
   animation: spider-move-4 5s infinite;
 }
 .spider_5 {
   right: 5%;
-  margin-top: 40px;
+  margin-top: 210px;
   -moz-animation: spider-move-5 5s infinite;
   -webkit-animation: spider-move-5 5s infinite;
   animation: spider-move-5 5s infinite;
@@ -229,6 +226,7 @@
   right: -10px;
   top: -10px;
   z-index: -1;
+  opacity: 0.2;
 }
 .web-left {
   position: absolute;
@@ -239,6 +237,7 @@
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   z-index: -1;
+  opacity: 0.2;
 }
 @-moz-keyframes flicker {
   0%,
@@ -280,6 +279,11 @@
       0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
     color: #fa6701;
   }
+  100% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4),
+      0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #fa6701;
+  }
 }
 @keyframes flicker {
   0%,
@@ -291,6 +295,16 @@
   3%,
   9% {
     text-shadow: 0 0 8px rgba(250, 103, 1, 0.6);
+    color: #fa6701;
+  }
+  60% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4),
+      0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
+    color: #fa6701;
+  }
+  100% {
+    text-shadow: 0 0 8px rgba(250, 103, 1, 0.6), 0 0 16px rgba(250, 103, 1, 0.4),
+      0 0 20px rgba(255, 0, 84, 0.2), 0 0 22px rgba(255, 0, 84, 0.1);
     color: #fa6701;
   }
 }
@@ -370,6 +384,7 @@
     -webkit-transform: rotate(-36deg) skewX(20deg);
     transform: rotate(-36deg) skewX(20deg);
   }
+
   25%,
   75% {
     -webkit-transform: rotate(-15deg) skewX(20deg);
@@ -531,36 +546,36 @@
 @keyframes spider-move-4 {
   0%,
   100% {
-    margin-top: 35px;
+    margin-top: 134px;
   }
   63% {
-    margin-top: calc(35px + 20px);
+    margin-top: calc(134px + 102px);
   }
 }
 @-moz-keyframes spider-move-5 {
   0%,
   100% {
-    margin-top: 40px;
+    margin-top: 225px;
   }
   39% {
-    margin-top: calc(40px + 35px);
+    margin-top: calc(225px + 114px);
   }
 }
 @-webkit-keyframes spider-move-5 {
   0%,
   100% {
-    margin-top: 40px;
+    margin-top: 225px;
   }
   39% {
-    margin-top: calc(40px + 35px);
+    margin-top: calc(225px + 114px);
   }
 }
 @keyframes spider-move-5 {
   0%,
   100% {
-    margin-top: 40px;
+    margin-top: 225px;
   }
   39% {
-    margin-top: calc(40px + 35px);
+    margin-top: calc(225px + 114px);
   }
 }

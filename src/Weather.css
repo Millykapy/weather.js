@@ -1,10 +1,14 @@
 .Weather {
   font-family: "Nosifer", sans-serif;
   border: 1px solid grey;
-  color: rgb(85, 149, 27);
-  padding: 16px;
+  padding: 0 auto;
+
   border-radius: 10px;
   text-shadow: 1px 1px 1px rgb(20, 20, 20);
+  background-color: rgba(244, 247, 250, 0.829);
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/135/274/original/Halloween_background.png?1721834452`);
 }
 
 .Weather h2 {
@@ -12,8 +16,8 @@
   font-weight: 100;
   line-height: 29px;
   margin: 20px 0 0 0;
-  color: rgb(255, 67, 5);
-  padding: 15px;
+  color: white;
+  padding: 10px;
   box-shadow: 5px;
 }
 
@@ -23,7 +27,8 @@
 }
 
 .Weather form {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
 }
 .Weather canvas {
   height: 64px;
@@ -37,10 +42,11 @@
   font-weight: 100;
   line-height: 19px;
   list-style: none;
+  color: white;
 }
 .Weather .temperature {
   font-weight: bold;
-  color: rgb(255, 67, 5);
+  color: white;
   font-size: 40px;
   line-height: 60px;
   font-weight: 300;
