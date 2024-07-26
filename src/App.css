@@ -2,7 +2,6 @@
   max-width: 580px;
   margin: 0 auto;
   text-align: center;
-  color: #fa6701;
   border-radius: 5px;
 }
 .App a {
@@ -31,9 +30,7 @@
 }
 
 body {
-  background-color: #e5d3fd;
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/135/360/original/annie-spratt-X4l3CjcDvic-unsplash.jpg?172184938);
-  background-size: 100%;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/135/549/original/pexels-codioful-7130500.jpg?1721935792);
 }
 
 [class*="spider"] {
