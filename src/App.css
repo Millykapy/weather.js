@@ -5,18 +5,18 @@
   border-radius: 5px;
 }
 .App a {
-  color: #fa6701;
+  color: rgb(119, 46, 4);
   font-style: italic;
-  font-family: "Nosifer", sans-serif;
+  font-size: 14px;
 }
 
 .App footer {
-  font-size: 11px;
+  font-size: 14px;
   margin: 0 auto;
-  font-family: "Nosifer", sans-serif;
-  color: green;
+  color: black;
   font-style: italic;
   padding: 5px;
+  font-weight: bold;
 }
 
 .App h3 {
@@ -27,6 +27,7 @@
   -moz-animation: flicker 4s 0s infinite;
   -webkit-animation: flicker 4s 0s infinite;
   animation: flicker 4s 0s infinite;
+  padding: 4px;
 }
 
 body {
@@ -35,6 +36,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  backdrop-filter: blur(1px);
 }
 
 [class*="spider"] {
