@@ -30,7 +30,8 @@
 }
 
 body {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/491/original/pexels-francesco-ungaro-4862906.jpg?1722444117);
+  font-size: 20px;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/135/274/original/Halloween_background.png?1721834452`);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
